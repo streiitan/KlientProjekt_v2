@@ -4,9 +4,11 @@ public class Piece {
     private boolean king;
     private int x;
     private int y;
+    public final Color COLOR;
 
-    public Piece() {
+    public Piece(Color color) {
         king = false;
+        this.COLOR = color;
     }
 
     public boolean isKing() {
