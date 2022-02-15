@@ -7,8 +7,21 @@ package com.example.klientprojekt_v2;
  */
 public class CellNode {
 
+    Piece piece = null;
+
     public CellNode() {
 
+    }
+
+    public boolean hasPiece() {
+        if (piece == null) {
+            return false;
+        }
+        return true;
+    }
+
+    public void getPiece(Piece piece) {
+        this.piece = piece;
     }
 
 
