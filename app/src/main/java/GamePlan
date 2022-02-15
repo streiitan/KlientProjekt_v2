@@ -6,6 +6,11 @@
 [] Pjäser - Jennifer
 
 Hur ska man kunna beräkna nästa drag?
+MovingManager! i PlayActivity?
+    Hur kopplar vi till knappar?
+        - Alla CellNodes ligger i PlayActivity i en ArrayList<CellNode>?
+        - Knapparna har en referens till en CellNode
+        - Knapp trycks > skickar x och y till MovingManager
 
 
 Analys:
