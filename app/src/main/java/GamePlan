@@ -1,0 +1,25 @@
+[] Bakgrund, bakom brädet, ska kodas in i XML - Ann
+[] Spelbräde, ska kodas in i XML - Ann
+[] Buttons på varje svart ruta - Ann
+
+[] Beräkna nästa drag - Jennifer
+[] Pjäser - Jennifer
+
+Hur ska man kunna beräkna nästa drag?
+
+
+Analys:
+Spelet i sig:
+- Det ska finnas två spelare, röd och svart
+- Varje spelare har 12 pjäser, ger totalt 24 pjäser
+- Man spelar endast på de svarta rutorna
+- De svarta rutorna kan hanteras som knappar
+- Om man klickar på en knapp måste den veta om det ligger en pjäs där eller inte
+    Hur??
+    -referens till en spelpjäs?
+
+- Man flyttar pjäserna
+- Flyttar man pjäsen över en annan pjäs måste den försvinna
+    - Referensen tas bort?
+- Kommer en pjäs till andra sidan ska denna bli Kung och kan då flytta baklänges
+- En pjäs som inte är kung kan endast flyttas framåt
