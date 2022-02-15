@@ -1,9 +1,20 @@
-[] Bakgrund, bakom brädet, ska kodas in i XML - Ann
-[] Spelbräde, ska kodas in i XML - Ann
-[] Buttons på varje svart ruta - Ann
+[x] Bakgrund, bakom brädet, ska kodas in i XML - Ann
+[x] Spelbräde, ska kodas in i XML - Ann
+[/] Buttons på varje svart ruta - Ann
+[] Koppla knappar till cellMarked -Ann
 
 [] Beräkna nästa drag - Jennifer
-[] Pjäser - Jennifer
+[x] Pjäser - Jennifer
+[x] CellNode, hantering? - Jennifer
+
+[] Visa pjäser
+[] Internet (:
+[] Play Game, skriva in Kod
+[] Generate game, generera en kod
+[] Activity_Main.XML
+[] Koppla knappar till playGame och GenerateGame
+
+
 
 Hur ska man kunna beräkna nästa drag?
 MovingManager! i PlayActivity?

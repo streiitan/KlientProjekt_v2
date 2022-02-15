@@ -20,8 +20,10 @@ public class PlayActivity extends AppCompatActivity {
     private class movingManager {
 
         private final int NUMBER_OF_CELLS = 32;
+
         private final int X_MAX = 4;
         private final int Y_MAX = 8;
+
         private ArrayList<CellNode> cellNodeList;
 
 
@@ -54,6 +56,7 @@ public class PlayActivity extends AppCompatActivity {
 
         /**
          * Hämtar cellen genom en beräkning av vilken plats i arrayListen den ligger på
+         * När knappen trycks skickas x- och y-värdet in
          * @param x-koordinaten
          * @param y-koordinaten
          */
