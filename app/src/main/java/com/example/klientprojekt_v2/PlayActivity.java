@@ -52,7 +52,7 @@ public class PlayActivity extends AppCompatActivity {
         public void cellMarked(int x, int y) {
             int markedCell = y * X_MAX + x;
             CellNode cell = cellNodeList.get(markedCell);
-            if (cell.hasPiece) {
+            if (cell.hasPiece()) {
 
             }
         }
