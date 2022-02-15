@@ -17,7 +17,7 @@ public class PlayActivity extends AppCompatActivity {
     /**
      * Hanterar cellnoderna samt sätter upp brädet vid start
      */
-    private class movingManeger {
+    private class movingManager {
 
         private final int NUMBER_OF_CELLS = 32;
         private final int X_MAX = 4;
