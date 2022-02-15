@@ -41,19 +41,31 @@ public class PlayActivity extends AppCompatActivity {
          * Sätter upp spelpjäserna vid start
          */
         public void setUpPieces() {
+            for (int i = 0; i < 12; i++) {
+                CellNode cell = cellNodeList.get(i);
+                cell.setPiece(new Piece(Color.RED));
+            }
 
+            for (int i = 20; i < NUMBER_OF_CELLS; i++) {
+                CellNode cell = cellNodeList.get(i);
+                cell.setPiece(new Piece(Color.BLACK));
+            }
         }
 
         /**
          * Hämtar cellen genom en beräkning av vilken plats i arrayListen den ligger på
-         * @param x
-         * @param y
+         * @param x-koordinaten
+         * @param y-koordinaten
          */
         public void cellMarked(int x, int y) {
             int markedCell = y * X_MAX + x;
             CellNode cell = cellNodeList.get(markedCell);
             if (cell.hasPiece()) {
+                if (cell.getPieceColor() == Color.RED){
 
+                } else {
+
+                }
             }
         }
     }
