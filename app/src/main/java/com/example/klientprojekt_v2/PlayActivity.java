@@ -20,7 +20,10 @@ public class PlayActivity extends AppCompatActivity {
     private class movingManeger {
 
         private final int NUMBER_OF_CELLS = 32;
+        private final int X_MAX = 4;
+        private final int Y_MAX = 8;
         private ArrayList<CellNode> cellNodeList;
+
 
         /**
          * Sätter upp CellNoder för hela brädet
@@ -47,7 +50,11 @@ public class PlayActivity extends AppCompatActivity {
          * @param y
          */
         public void cellMarked(int x, int y) {
+            int markedCell = y * X_MAX + x;
+            CellNode cell = cellNodeList.get(markedCell);
+            if (cell.hasPiece) {
 
+            }
         }
     }
 }
