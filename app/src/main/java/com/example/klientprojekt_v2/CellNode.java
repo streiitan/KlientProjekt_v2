@@ -7,7 +7,7 @@ package com.example.klientprojekt_v2;
  */
 public class CellNode {
 
-    Piece piece = null;
+    private Piece piece = null;
 
     public CellNode() {
 
@@ -20,8 +20,16 @@ public class CellNode {
         return true;
     }
 
-    public void getPiece(Piece piece) {
+    public void setPiece(Piece piece) {
         this.piece = piece;
+    }
+
+    public void removePiece() {
+        this.piece = null;
+    }
+
+    public Color getPieceColor() {
+        return piece.COLOR;
     }
 
 
