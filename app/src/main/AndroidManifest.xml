@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Klientprojekt_v2">
         <activity
+            android:name=".PlayActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
