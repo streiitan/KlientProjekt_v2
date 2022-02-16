@@ -1,7 +1,5 @@
 package com.example.klientprojekt_v2;
 
-import androidx.annotation.NonNull;
-
 import java.util.ArrayList;
 
 public class MovingManager {
@@ -49,37 +47,53 @@ public class MovingManager {
     public void cellMarked(int x, int y) {
         int markedCell = y * X_MAX + x;
         CellNode cell = cellNodeList.get(markedCell);
+        CellNode leftCell = null;
+        CellNode rightCell = null;
         if (cell.hasPiece()) {
             if (cell.getPieceColor() == Color.RED) {
-                if (y % 2 == 0 ) {
-                    CellNode rightCell = cellNodeList.get(markedCell + X_MAX);
-                    if (markedCell % 4 != 0) {
-                        CellNode leftCell = cellNodeList.get(markedCell + X_MAX -1);
-                    }
-                } else {
-                    CellNode leftCell = cellNodeList.get(markedCell -X_MAX);
-                    if (markedCell % 4 != 3) {
-                        CellNode rightCell = cellNodeList.get(markedCell + X_MAX +1);
-                    }
-                }
-                if (cell.pieceIsKing()) {
-                    //TODO lägg till bakåt
-                }
+                downCalc(cell, markedCell);
             } else {
-                if (y % 2 == 0) {
-                    CellNode rightCell = cellNodeList.get(markedCell - X_MAX);
-                    if (markedCell % 4 != 0) {
-                        CellNode leftCell = cellNodeList.get(markedCell - X_MAX -1);
-                    }
-                } else {
-
-                }
-            };
+                upCalc(cell, markedCell);
+            }
         }
     }
 
-    public void cellMarked(int i, CellNode cell) {
-        int markedCell = i;
+    private void downCalc(CellNode current, int markedCell) {
+        CellNode rightCell = null;
+        CellNode leftCell = null;
+        if ((markedCell % X_MAX) % 2 == 0 ) {
+            rightCell = cellNodeList.get(markedCell + X_MAX);
+            if (markedCell % X_MAX != 0) {
+                leftCell = cellNodeList.get(markedCell + X_MAX -1);
+            }
+        } else {
+            leftCell = cellNodeList.get(markedCell -X_MAX);
+            if (markedCell % X_MAX != 3) {
+                rightCell = cellNodeList.get(markedCell + X_MAX +1);
+            }
+        }
 
+        if (current.pieceIsKing()) {
+            upCalc(current, markedCell);
+        }
+    }
+
+    public void upCalc(CellNode current, int markedCell) {
+        CellNode rightCell = null;
+        CellNode leftCell = null;
+        if ((markedCell % X_MAX) % 2 == 0) {
+            rightCell = cellNodeList.get(markedCell - X_MAX);
+            if (markedCell % X_MAX != 0) {
+                leftCell = cellNodeList.get(markedCell - X_MAX -1);
+            }
+        } else {
+            leftCell = cellNodeList.get(markedCell - X_MAX);
+            if(markedCell % X_MAX != 3) {
+                rightCell = cellNodeList.get(markedCell - X_MAX +1);
+            }
+        }
+        if (current.pieceIsKing()) {
+            downCalc(current, markedCell);
+        }
     }
 }
