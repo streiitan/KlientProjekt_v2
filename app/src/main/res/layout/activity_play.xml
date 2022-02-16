@@ -12,7 +12,7 @@
         android:layout_width="361dp"
         android:layout_height="363dp"
         android:layout_gravity="center"
-        android:src="@drawable/background_board" />
+        android:src="@drawable/boa" />
 
     <LinearLayout
         android:id="@+id/parent_layout"
