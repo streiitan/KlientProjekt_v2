@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 public class PlayActivity extends AppCompatActivity {
 
+    MovingManager movingManager = new MovingManager();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +19,7 @@ public class PlayActivity extends AppCompatActivity {
     /**
      * Hanterar cellnoderna samt sätter upp brädet vid start
      */
-    private class movingManager {
+    private class MovingManager {
 
         private final int NUMBER_OF_CELLS = 32;
 
@@ -32,7 +34,7 @@ public class PlayActivity extends AppCompatActivity {
          * Ska användas vid start
          */
         public void setCellNodes() {
-            cellNodeList = new ArrayList<CellNode>();
+            cellNodeList = new ArrayList<>();
             for (int i = 0; i < NUMBER_OF_CELLS; i++) {
                 CellNode cellNode = new CellNode();
                 cellNodeList.add(cellNode);
@@ -65,11 +67,19 @@ public class PlayActivity extends AppCompatActivity {
             CellNode cell = cellNodeList.get(markedCell);
             if (cell.hasPiece()) {
                 if (cell.getPieceColor() == Color.RED){
-
+                    moveRedPiece();
                 } else {
-
+                    moveBlackPiece();
                 }
             }
+        }
+
+        private void moveRedPiece() {
+
+        }
+
+        private void moveBlackPiece() {
+
         }
     }
 }

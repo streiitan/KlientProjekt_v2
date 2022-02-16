@@ -32,5 +32,8 @@ public class CellNode {
         return piece.COLOR;
     }
 
+    public boolean pieceIsKing() {
+        return piece.isKing();
+    }
 
 }
