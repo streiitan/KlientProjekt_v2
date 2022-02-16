@@ -14,304 +14,754 @@
         android:contentDescription="@string/image_board_description"
         android:src="@drawable/Board" />
 
+    <TableLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
 
-    <GridLayout
-        android:layout_width="371dp"
-        android:layout_height="359dp"
-        android:layout_gravity="center"
-        android:columnCount="8"
-        android:rowCount="7">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="53dp"
-            android:layout_height="49dp"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="0"
-            android:layout_column="4"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView1"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="0"
-            android:layout_column="6"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView2"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="1"
-            android:layout_column="3"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="1"
-            android:layout_column="5"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView3"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="1"
-            android:layout_column="7"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button4"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView5"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/EmptyImageView6"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView7"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button6"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView8"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button7"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView9"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button8"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="2"
-            android:layout_column="2"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button9"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="2"
-            android:layout_column="4"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView10"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="2"
-            android:layout_column="6"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button10"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button13"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="3"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView11"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="3"
-            android:layout_column="3"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button11"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button15"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="3"
-            android:layout_column="5"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView12"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button16"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="3"
-            android:layout_column="7"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button12"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button17"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="4"
-            android:layout_column="0"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView13"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button18"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="4"
-            android:layout_column="2"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+        </TableRow>
 
-        <Button
-            android:id="@+id/button19"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="4"
-            android:layout_column="4"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/button20"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="4"
-            android:layout_column="6"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView14"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button21"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="5"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button13"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button22"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="5"
-            android:layout_column="3"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView15"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button23"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="5"
-            android:layout_column="5"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button14"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button24"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="5"
-            android:layout_column="7"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView16"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button25"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="6"
-            android:layout_column="0"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button15"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button26"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="6"
-            android:layout_column="2"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView17"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button27"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="6"
-            android:layout_column="4"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button16"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+        </TableRow>
 
-        <Button
-            android:id="@+id/button28"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="6"
-            android:layout_column="6"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/button29"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="7"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button17"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button30"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="7"
-            android:layout_column="3"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView18"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button31"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="7"
-            android:layout_column="5"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <Button
+                android:id="@+id/button18"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
 
-        <Button
-            android:id="@+id/button32"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_row="7"
-            android:layout_column="7"
-            android:layout_gravity="fill"
-            android:background="@drawable/blank_square_buttons" />
+            <ImageView
+                android:id="@+id/EmptyImageView19"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
 
-    </GridLayout>
+            <Button
+                android:id="@+id/button19"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView20"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button20"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView21"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/EmptyImageView22"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button21"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView23"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button22"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView24"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button23"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView25"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button24"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button25"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView26"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button26"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView27"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button27"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView28"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button28"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView29"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/EmptyImageView30"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button29"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView31"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button30"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView32"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button31"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+
+            <ImageView
+                android:id="@+id/EmptyImageView33"
+                android:layout_weight="1"
+                android:contentDescription="@string/empty_image"
+                android:src="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button32"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:background="@drawable/blank_square_buttons" />
+        </TableRow>
+    </TableLayout>
+
+    <!--
+        <GridLayout
+            android:layout_width="371dp"
+            android:layout_height="364dp"
+            android:layout_gravity="center"
+            android:columnCount="8"
+            android:rowCount="8">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="53dp"
+                android:layout_height="49dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width=
+                android:layout_height="43dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_row="0"
+                android:layout_column="6"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="1"
+                android:layout_column="7"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="2"
+                android:layout_column="6"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="3"
+                android:layout_column="7"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="4"
+                android:layout_column="4"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="4"
+                android:layout_column="6"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="5"
+                android:layout_column="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="5"
+                android:layout_column="5"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="5"
+                android:layout_column="7"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="6"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="6"
+                android:layout_column="4"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="6"
+                android:layout_column="6"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/blank_square_buttons" />
+
+                            <Button
+                                android:id="@+id/button30"
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:layout_row="7"
+                                android:layout_column="3"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/blank_square_buttons" />
+
+                            <Button
+                                android:id="@+id/button31"
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:layout_row="7"
+                                android:layout_column="5"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/blank_square_buttons" />
+
+                            <Button
+                                android:id="@+id/button32"
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:layout_row="7"
+                                android:layout_column="7"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/blank_square_buttons" />
+
+    </GridLayout>-->
 
 </FrameLayout><!--
     <LinearLayout
