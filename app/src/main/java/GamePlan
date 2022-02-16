@@ -2,8 +2,11 @@
 [x] Spelbräde, ska kodas in i XML - Ann
 [/] Buttons på varje svart ruta - Ann
 [] Koppla knappar till cellMarked -Ann
+[] En färgad ruta lika stor som svarta (med lite genomskinlighet?) - Ann
 
 [] Beräkna nästa drag - Jennifer
+[] Flytta pjäser - Jennifer
+[] JUnit-tester - Jennifer
 [x] Pjäser - Jennifer
 [x] CellNode, hantering? - Jennifer
 
