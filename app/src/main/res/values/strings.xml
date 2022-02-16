@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Klientprojekt_v2</string>
+    <string name="image_board_description">Image shows the checkers board</string>
 </resources>
