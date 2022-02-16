@@ -61,6 +61,7 @@ public class MovingManager {
     private void downCalc(CellNode current, int markedCell) {
         CellNode rightCell = null;
         CellNode leftCell = null;
+
         if ((markedCell % X_MAX) % 2 == 0 ) {
             rightCell = cellNodeList.get(markedCell + X_MAX);
             if (markedCell % X_MAX != 0) {
@@ -76,6 +77,8 @@ public class MovingManager {
         if (current.pieceIsKing()) {
             upCalc(current, markedCell);
         }
+
+
     }
 
     public void upCalc(CellNode current, int markedCell) {
