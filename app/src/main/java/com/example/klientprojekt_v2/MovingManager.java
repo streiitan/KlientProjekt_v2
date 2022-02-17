@@ -10,6 +10,7 @@ public class MovingManager {
     private final int Y_MAX = 8;
 
     private ArrayList<CellNode> cellNodeList;
+    private ArrayList<CellNode> cellNodes;
 
     /**
      * Sätter upp CellNoder för hela brädet
@@ -77,8 +78,6 @@ public class MovingManager {
         if (current.pieceIsKing()) {
             upCalc(current, markedCell);
         }
-
-
     }
 
     public void upCalc(CellNode current, int markedCell) {
@@ -99,4 +98,5 @@ public class MovingManager {
             downCalc(current, markedCell);
         }
     }
+
 }
